@@ -1,10 +1,6 @@
 from trie import get_trie, Trie
 from copy import copy
 
-
-# center_letter = "h"
-# puzzle_letters = {"g", "i", "a", "r", "l", "c"}
-
 center_letter = "h"
 puzzle_letters = {"a", "i", "r", "l", "g", "c"}
 
