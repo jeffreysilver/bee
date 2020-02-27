@@ -4,7 +4,7 @@ from copy import copy
 center_letter = "h"
 puzzle_letters = {"a", "i", "r", "l", "g", "c"}
 
-class Solver(object):
+class Solver():
 
     def __init__(self, puzzle_letters, center_letter):
         self.letters = set()

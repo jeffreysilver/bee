@@ -3,7 +3,7 @@ import requests
 
 pickle_path = "save.p"
 
-class Node(object):
+class Node():
 
     def __init__(self, char):
         self.char = char
@@ -26,7 +26,7 @@ class Node(object):
         self.is_terminus = True
 
 
-class Trie(object):
+class Trie():
 
     def __init__(self):
         self.parent = Node("")
