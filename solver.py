@@ -1,8 +1,8 @@
 from trie import get_trie, Trie
 from copy import copy
+import click
 
-center_letter = "m"
-puzzle_letters = {"f", "o", "u", "r", "l", "n"}
+
 
 class Solver():
 
@@ -28,4 +28,20 @@ class Solver():
 
         print(sorted(found_words, key=len, reverse=True))
 
-Solver(puzzle_letters, center_letter).solve()
+
+@click.command()
+@click.argument("letters")
+@click.argument("center")
+def cli(letters, center):
+
+    center = center.lower()
+    letters = [l for l in letters.lower()]
+
+    click.echo("Spelling Bee")
+    click.echo(f"Letters: {letters}")
+    click.echo(f"Center: {center}")
+
+    Solver(letters, center).solve()
+
+if __name__ == '__main__':
+    cli()
