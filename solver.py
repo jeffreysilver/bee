@@ -30,8 +30,8 @@ class Solver():
 
 
 @click.command()
-@click.argument("letters")
-@click.argument("center")
+@click.option("--letters", required=True, help="The letters surrounding the center letter")
+@click.option("--center", required=True, help="The letter in the center of the puzzle")
 def cli(letters, center):
 
     center = center.lower()
