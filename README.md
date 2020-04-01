@@ -2,7 +2,7 @@
 
 
 ### Usage
-`python3 solver.py --letters GARLIC --center O`
+`python solver.py --letters GARLIC --center O`
 
 Output:
 ```
